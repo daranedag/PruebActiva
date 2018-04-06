@@ -15,7 +15,7 @@ Contiene las instrucciones y llamados para validar los datos ingresados por el u
 Pagina mostrada al momento de iniciar correctamente la sesión. En ella se despliega una tabla con todos los datos existentes en la tabla "datos"
 ### niveles.php
 Pagina que muestra un combobox con las tiendas existentes. Al seleccionar alguna de las opciones y presionar el boton "Graficar" se actualiza el gráfico y la tabla con los datos obtenidos de la BD
-###graficos.php
+### graficos.php
 Archivo que contiene llamados a funciones para hacer el calculo de los datos solicitados (base, satisfaccion, insatisfaccion y neta)
 
 ### css/miCss.css
@@ -26,3 +26,8 @@ Carpeta que contiene los logos utilizados dentro de la pagina como el del icono 
 
 ### js/llamadoGraficos.js
 Contiene instrucciones para desplegar datos dinámicamente en la página al interactuar con ella.
+
+## Herramientas utilizadas
+### Servidor de pruebas: Apache
+### Base de datos: MySQL
+### Desarrollo web: PHP, HTML5, CSS3 + bootstrap 4, jQuery 3.3.1, Ajax, Chart.js (graficos)
