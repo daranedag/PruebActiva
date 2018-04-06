@@ -1,4 +1,5 @@
 <?php
+	//variables de sesion
 	include('session.php');
 ?>
 <!DOCTYPE html>
@@ -10,7 +11,7 @@
       	<link href="img/open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet">
    	</head>
    	<header>
-   		<nav class="navbar navbar-expand-sm navbar-light fixed-top bg-light">	        
+   		<nav class="navbar navbar-expand-sm navbar-light fixed-top bg-light" style="height: 7%;">	        
 	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 	          <span class="navbar-toggler-icon"></span>
 	        </button>
@@ -18,11 +19,11 @@
 	          	<ul class="navbar-nav mr-auto">
 	            	<li class="nav-item active">
 	              		<a class="nav-link" href="index.php">
-	              			<img class="mb-4" src="img/logo.png" alt="" width="100" height="40">
+	              			<img class="mb-4" src="img/logo.png" alt="" width="100" height="40" style="margin-top: 10%">
 	              			<span class="sr-only">(current)</span></a>
 	            	</li>
-	            	<li class="nav-item">
-	              		<a class="nav-link" href="niveles.php">Gráfico</a>
+	            	<li class="nav-item" style="margin-top: 6%">
+	              		<a class="nav-link" href="niveles.php"><b>Gráfico</b></a>
 	            	</li>
 	            </ul>
             	<form class="form-inline mt-2 mt-md-0" style="margin-top: -30px">
@@ -37,8 +38,7 @@
       	</nav>
    	</header>
    	<body>
-   		<body>
-   		<div class="container" style="margin-top: 9%">
+   		<div class="container" style="margin-top: 4%">
    			<div class="alert alert-secondary">
    				<h4 class="alert-heading">Nota importante</h4>
    				A continuación se muestra el resultado de la encuesta realizada. <br>Se puede filtrar escribiendo el texto
@@ -47,6 +47,7 @@
    			
    			<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Ingrese sucursal" class="form-control">
 	   		<?php
+	   			//Query e instrucciones para llenar la tabla que se muestra
 	   			$sql = "SELECT tiendas.nom_tienda, P1, P2, P3, P4 FROM datos LEFT JOIN tiendas ON datos.id_tienda=tiendas.id_tienda";
 	   			$result = mysqli_query($db,$sql);
 	   			echo "
@@ -71,7 +72,7 @@
    		</div>   		
 		<script type="text/javascript">
 			function myFunction() {
-				// Declare variables 
+				// Funcion para filtrar la tabla segun el texto a escribir
 				var input, filter, table, tr, td, i;
 				input = document.getElementById("myInput");
 				filter = input.value.toUpperCase();

@@ -13,7 +13,6 @@
       	$count = mysqli_num_rows($result);
       	
 		if($count == 1) {
-	        //session_register("myusername");
 	        $_SESSION['login_user'] = $myusername;	         
 	        header("location: index.php");	        
 	    }
@@ -46,12 +45,11 @@
 		</form>
 		<?php
 			if($error==""){
-
+				//no muestra nada
 			}
 			else{?>
 		<div class="alert alert-danger" role="alert">
 				<?php echo $error;
-
 		}?>
 		</div>
 	</body>
