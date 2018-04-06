@@ -14,7 +14,7 @@ Contiene las instrucciones y llamados para validar los datos ingresados por el u
 ### index.php
 Pagina mostrada al momento de iniciar correctamente la sesión. En ella se despliega una tabla con todos los datos existentes en la tabla "datos"
 ### niveles.php
-Pagina que muestra un combobox con las tiendas existentes. Al seleccionar alguna de las opciones y presionar el boton "Graficar" se actualiza el gráfico y la tabla con los datos obtenidos de la BD.
+Pagina que muestra un combobox con las tiendas existentes. Al seleccionar alguna de las opciones y presionar el boton "Graficar" se actualiza el gráfico y la tabla con los datos obtenidos de la BD
 ###graficos.php
 Archivo que contiene llamados a funciones para hacer el calculo de los datos solicitados (base, satisfaccion, insatisfaccion y neta)
 
